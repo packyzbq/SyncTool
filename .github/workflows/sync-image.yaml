@@ -7,6 +7,9 @@ jobs:
     name: Sync docker image
     runs-on: ubuntu-latest
     steps:
+    - name: checkout
+      uses: actions/checkout@v2
     - name: pull image from docker hub
       run: |
-        bash image-sync/sync.sh
+        pwd
+        bash ../image-sync/sync.sh
