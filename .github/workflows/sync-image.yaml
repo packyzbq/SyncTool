@@ -10,6 +10,9 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: pull image from docker hub
+      env:
+        ACS_USERNAME: ${{ .secrets.ACS_USERNAME }}
+        ACS_PASSWORD: ${{ .secrets.ACS_PASSWORD }}
       run: |
         pwd
         bash image-sync/sync.sh
