@@ -12,4 +12,4 @@ jobs:
     - name: pull image from docker hub
       run: |
         pwd
-        bash ../image-sync/sync.sh
+        bash image-sync/sync.sh
