@@ -1,6 +1,6 @@
 #!/bin/sh
 TARGET_REPO=${TARGET_REPO:-"registry.cn-hangzhou.aliyuncs.com/packyzbq/public"}
-for image in `cat image-sync/images_list`
+for line in `cat image-sync/images_list`
 do
     echo " start sync image $line"
     docker pull $line
