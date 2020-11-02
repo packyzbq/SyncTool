@@ -1,0 +1,12 @@
+name: Sync image to aliyun
+
+on: push
+
+jobs:
+  sync_image_job:
+    name: Sync docker image
+    runs-on: ubuntu-latest
+    steps:
+    - name: pull image from docker hub
+      run: |
+        bash image-sync/sync.sh
