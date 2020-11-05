@@ -1,1 +1,2 @@
 arm64v8/kong:2.1
+arm64v8/nextcloud:fpm-alpine
