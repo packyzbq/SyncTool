@@ -1,4 +1,4 @@
-# arm64v8/kong:2.1
-# arm64v8/nextcloud:fpm-alpine
-# arm64v8/nextcloud:20
+#arm64v8/kong:2.1
+#arm64v8/nextcloud:fpm-alpine
+#arm64v8/nextcloud:20
 grafana/grafana:latest-ubuntu@arm64
