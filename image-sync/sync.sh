@@ -1,7 +1,6 @@
 #!/bin/sh
 TARGET_REPO=${TARGET_REPO:-"registry.cn-hangzhou.aliyuncs.com"}
 NAMESPACE=${NAMESPACE:-"packyzbq"}
-extra_args=
 for line in `cat image-sync/images_list`
 do
     if [[ ${line:0:1} != "#" ]]
