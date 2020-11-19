@@ -7,5 +7,5 @@ services:
 script:
   - cd image-build/seafile
   - docker build . -t registry.cn-hangzhou.aliyuncs.com/packyzbq/seafile:7.1.5-arm64
-  - docker login -u ACS_USERNAME -p ACS_PASSWORD  registry.cn-hangzhou.aliyuncs.com
+  - docker login -u $ACS_USERNAME -p $ACS_PASSWORD  registry.cn-hangzhou.aliyuncs.com
   - docker push registry.cn-hangzhou.aliyuncs.com/packyzbq/seafile:7.1.5-arm64
