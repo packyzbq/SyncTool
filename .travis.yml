@@ -1,0 +1,9 @@
+arch:
+- arm64
+services:
+    - docker
+script:
+    - docker pull linuxserver/jellyfin:latest
+    - docker tag linuxserver/jellyfin:latest registry.cn-hangzhou.aliyuncs.com/packyzbq/jellyfin:latest-arm64
+    - docker login --username=jimzbq9 -p $ACS_PASSWORD registry.cn-hangzhou.aliyuncs.com 
+    - docker push registry.cn-hangzhou.aliyuncs.com/packyzbq/jellyfin:latest-arm64
